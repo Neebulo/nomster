@@ -59,5 +59,8 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
 
+# input form
+gem 'simple_form'
+
 # Kaminari Pagination
 gem 'kaminari'
