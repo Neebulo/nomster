@@ -64,3 +64,6 @@ gem 'simple_form'
 
 # Kaminari Pagination
 gem 'kaminari'
+
+gem "font-awesome-rails"
+
