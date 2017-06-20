@@ -67,3 +67,5 @@ gem 'kaminari'
 
 gem "font-awesome-rails"
 
+# User Authentication
+gem 'devise'
