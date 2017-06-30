@@ -69,3 +69,9 @@ gem "font-awesome-rails"
 
 # User Authentication
 gem 'devise'
+
+# Map Integration
+gem "geocoder"
+
+# ADD API to ENV
+gem "figaro"
