@@ -72,3 +72,6 @@ gem 'devise'
 
 # Map Integration
 gem "geocoder"
+
+# ADD API to ENV
+gem "figaro"
