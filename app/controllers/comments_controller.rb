@@ -1,2 +1,23 @@
 class CommentsController < ApplicationController
+before_action :authenticate_user!
+
+  def create
+    @place = Place.find(params[:place_id])
+  end
+
+
+
+
+
+
+
+
+
+
+
+  private
+
+  def comment_params
+    params.require(:comment).permit(:message, :rating)
+  end
 end
