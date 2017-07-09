@@ -37,9 +37,10 @@
 
 <% end %>
 
-<br />
+<br class="clear" />
 
   <div class="float-right">
+    <br class="clear" />
     <br class="clear" />
     <% if current_user && current_user == @place.user %>
       <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
