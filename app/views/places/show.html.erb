@@ -48,6 +48,15 @@
     <% end %>
       
   </div>
+
+<!-- <br class="clear" /> -->
+
+
+
+
+
+
+
 </div>
 <!-- this keeps place edit destroy valid -->
 <br class="clear" />
@@ -72,12 +81,17 @@
   <% end %>
 </div>
 
-<%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
-  <%= f.input :picture %>
-  <%= f.input :caption %>
-  <%= f.submit "Add a photo", class: 'btn btn-primary' %>
-<% end %>
-
+<h1 class="float-left">PHOTOS</h1>
+<div class="row">
+  <% @place.photos.each do |photo| %>
+   <div>
+    <blockquote>
+     <%= photo.picture %>
+     <%= photo.caption %>
+    </blockquote>
+   </div>
+  <% end %>
+</div>
   <!-- Button trigger modal Comment -->
   <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
     Add a comment
@@ -103,7 +117,7 @@
         <h4 class="modal-title" id="photoModalLabel">Add photo</h4>
       </div>
       <div class="modal-body">
-      <%= simple_form_for @photo, url: '#' do |f| %>
+      <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
           <%= f.input :picture %>
           <%= f.input :caption %>
       </div>
