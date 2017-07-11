@@ -75,3 +75,6 @@ gem "geocoder"
 
 # ADD API to ENV
 gem "figaro"
+
+# upload photo gem
+gem 'carrierwave', '~> 1.0'
