@@ -82,15 +82,12 @@
 </div>
 
 
-<% @place.photos.each do |photo| %>
-    <%= image_tag photo.picture %>
-    <%= photo.caption %>
-<% end %>
+
 
 <h1 class="float-left">PHOTOS</h1>
 <div class="row">
   <% @place.photos.each do |photo| %>
-   <div>
+   <div class="pic-container">
      <%= image_tag photo.picture %>
      <%= photo.caption %>
    </div>
