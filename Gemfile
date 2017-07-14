@@ -78,3 +78,6 @@ gem "figaro"
 
 # upload photo gem
 gem 'carrierwave', '~> 1.0'
+
+# carrierwave to AWS
+gem "fog-aws"
